@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather APP</title>
+    <link rel="stylesheet" href="new.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&icon_names=rainy" />
+</head>
+<body>
+    <div class="header">
+        <div class="header-content">
+            <input type="text" placeholder="City Name" name="search" spellcheck="false" class="city">
+            <a href="#whole"><button type="submit"><i class="fa fa-search"></i></button></a>
+        </div>
+    </div>
+    <div class="whole" id="whole">
+        <div class="left">
+            <form class="searchbox">
+                <input type="text" placeholder="City Name" name="search" spellcheck="false" id="cityName">
+                <button type="submit"><i class="fa fa-search"></i></button>
+            </form>
+            <div class="weather">
+                <img src="" alt="weather-icon" class="weather-icon">
+                <h1 class="temp medium"></h1>
+                <p class="weather-type small"></p>
+                <div class="line"></div>
+
+                <div class="date-time">
+                    <p class="small date"></p>
+                    <!-- <p class="medium time">Sunday, 02:57 PM</p> -->
+                    <!-- <p class="small day-night">Day</p> -->
+                </div>
+                <div class="place">
+                    <p class="large">Search city name to check for weather</p>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="right">
+            <div class="heading">
+                <p>Today</p>
+            </div>
+            <div class="container">
+                <div class="box row-1">
+                    <div class="sub-box">
+                        <p>Wind</p>
+                        <p class="medium wind-speed"></p>
+                        <!-- <p>wind direction</p> -->
+                    </div>
+                </div>
+                <div class="box row-1">
+                    <div class="sub-box">
+                        <p>Humidity</p>
+                        <p class="medium humidity"></p>
+                    </div>
+                </div>
+                <div class="box row-1">
+                    <div class="sub-box">
+                        <p>Feel like</p>
+                        <p class="medium feel-like"></p>
+                        <p></p>
+                    </div>
+                </div>
+                <div class="box row-2">
+                    <div class="sub-box">
+                        <p>Visibility</p>
+                        <p class="medium visibility"></p>
+                    </div>
+                </div>
+                <div class="box row-2">
+                    <div class="sub-box">
+                        <p>Pressure</p>
+                        <p class="medium pressure"></p>
+                    </div>
+                </div>
+                <div class="box row-2">
+                    <div class="sub-box">
+                        <p>Coordinates</p>
+                        <p class="medium lat"></p>
+                        <p class="medium long"></p>
+                        
+                    </div>
+                </div>
+                <div class="box row-3">
+                    <div class="sub-box">
+                        <p>Temperature history</p>
+                        <p class="medium max"></p>
+                        <p class="medium min"></p>
+                    </div>
+                </div>
+                <div class="box row-3">
+                    <div class="sub-box">
+                        <p>Sun</p>
+                        <p class="medium sunrise"></p>
+                        <p class="medium sunset"></p>
+                    </div>
+                </div>
+                <div class="box row-3">
+                    <div class="sub-box">
+                        <p>Description</p>
+                        <p class="medium description"></p>
+                        <p></p>
+                    </div>
+                </div>
+            </div>
+            <div class="footer">
+                <p class="p1">All data provided by - <a href="https://openweathermap.org/">OpenWeather</a></p>
+                <p class="p2">Design & Developed by - <span>Tanmay Kaushik</span></p>
+            </div>
+        </div>
+    </div>
+    <script src="new.js"></script>
+</body>
+</html>
+
